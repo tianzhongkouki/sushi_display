@@ -24,7 +24,7 @@ fetch('sushi.txt')
   .then(text => {
     sushiList = text.split('\n').map(line => line.trim()).filter(line => line.length > 0);
     updateSushi();
-    setInterval(updateSushi, 10000);
+    setInterval(updateSushi, 7000);
   })
   .catch(error => {
     console.error("寿司リストの読み込みに失敗しました:", error);
